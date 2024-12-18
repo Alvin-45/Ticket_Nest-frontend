@@ -1,0 +1,14 @@
+.fullscreen{
+    background-image: url('https://img.freepik.com/free-photo/movie-background-collage_23-2149876028.jpg?semt=ais_hybrid');
+    position: relative;
+}
+.form{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
