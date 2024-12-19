@@ -37,6 +37,9 @@ function Home() {
             }
         }
     }
+    const handleregistr=()=>{
+      navigate('/register')
+    }
     
   return (
     <>
@@ -52,7 +55,7 @@ function Home() {
                 
                 <button onClick={handleSubmit}>LOGIN</button>
                 <p style={{ color: 'black', backgroundColor: 'white' }}>
-                    Don't have an account? <u style={{ color: 'black', backgroundColor: 'white' }}>Register</u>
+                    Don't have an account? <u onClick={handleregistr} style={{ color: 'black', backgroundColor: 'white' ,cursor:'grab'}}>Register</u>
                 </p>
             </div>
     </div>

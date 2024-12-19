@@ -14,7 +14,7 @@ function Bookinng() {
             try {
                 let moviename="got"
                 const response = await getSeatAvailabilityAPI(moviename); 
-                
+                console.log(response)
                 if (response.success) {
                     setSeats(response.seats); // Set the seat states based on the API response
                 } else {

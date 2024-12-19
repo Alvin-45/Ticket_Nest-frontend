@@ -2,7 +2,8 @@ import { commonAPI } from "./commonAPI"
 import { SERVER_URL } from "./serverURL"
 
 export const registerAPI=async (reqBody)=>{
-    return await commonAPI("POST",`${SERVER_URL}/users/`,reqBody)
+    debugger
+    return await commonAPI("POST",`${SERVER_URL}/register/`,reqBody)
 } 
 
 export const loginAPI=async (loginmailid,loginpassword,reqHeader)=>{
@@ -15,6 +16,6 @@ export const markedSeatAPI=async (reqBody,reqHeader)=>{
 } 
 
 export const getSeatAvailabilityAPI=async (moviename,reqHeader)=>{
-    return await commonAPI("GET",`${SERVER_URL}/getSeatAvailbility?moviename=${moviename}`,"",reqHeader)
+    return await commonAPI("GET",`${SERVER_URL}/availseat`,"",reqHeader)
 } 
 
